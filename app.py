@@ -23,7 +23,7 @@ def index():
         print("A megadott emailcim: {}".format(email))
         print("A megadott jelszo: {}".format(passwd))
         # a bekuldott adatok kozul ellenorizzuk a felahasznalonevet, es ha az helyes
-        if email == "KrupMark":
+        if email == "patya8888":
             # atiranyitjuk a felhasznalot a belso oldalra
             return redirect(url_for('nyilvantarto'))
         else:
@@ -35,7 +35,7 @@ def index():
 
 @app.route("/nyilvantarto")
 def nyilvantarto():
-    user = "KrupMark"
+    user = "Patya8888"
     # a user valtozo,az az index.html file-ban is user valtozokent lesz elerheto
     return render_template('index.html', user=user)
 
